@@ -7,7 +7,7 @@
           <input type="text" class="input" placeholder="Go to the Mars..." v-model="description" />
         </div>
         <div class="control">
-          <a class="button is-info" @click="AddItem" :disabled="!description">Add</a>
+          <a class="button is-info" @click="addItem" :disabled="!description">Add</a>
         </div>
     </div>
     <div class="notification" v-for="(item, i) in items" :key="item._id">
